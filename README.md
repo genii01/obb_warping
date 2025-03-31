@@ -2,6 +2,24 @@
 
 이 프로젝트는 이미지의 OBB(Oriented Bounding Box) 좌표를 기반으로 이미지를 warping하는 Python 기반 도구입니다.
 
+## OBB YOLO 모델
+
+이 프로젝트는 YOLO-OBB(Oriented Bounding Box) 모델을 사용하여 이미지에서 카드의 방향성을 감지합니다. YOLO-OBB는 기존 YOLO 모델을 확장하여 회전된 객체를 감지할 수 있도록 한 버전입니다.
+
+![OBB YOLO Detection Example](obb_image.png)
+
+### OBB 좌표 형식
+
+YOLO-OBB 모델은 다음과 같은 형식으로 좌표를 출력합니다:
+- `[x1, y1, x2, y2, x3, y3, x4, y4]`
+- 각 좌표는 이미지의 픽셀 좌표를 나타냅니다
+- 좌표는 시계방향으로 정렬됩니다
+
+### 현재 설정된 OBB 좌표
+```python
+obb_res = [120, 307, 371, 538, 909, 237, 634, 47]
+```
+
 ## 기능
 
 - 이미지의 OBB 좌표를 기반으로 이미지 warping
@@ -61,7 +79,8 @@ obb_warping/
 ├── README.md
 ├── Makefile
 ├── image_warping.py
-└── card1.png
+├── card1.png
+└── obb_image.png
 ```
 
 ## 주요 함수
