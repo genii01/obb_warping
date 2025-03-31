@@ -6,7 +6,9 @@
 
 이 프로젝트는 YOLO-OBB(Oriented Bounding Box) 모델을 사용하여 이미지에서 카드의 방향성을 감지합니다. YOLO-OBB는 기존 YOLO 모델을 확장하여 회전된 객체를 감지할 수 있도록 한 버전입니다.
 
-![OBB YOLO Detection Example](obb_image.png)
+<div align="center">
+  <img src="./docs/images/obb_image.png" alt="OBB YOLO Detection Example">
+</div>
 
 ### OBB 좌표 형식
 
